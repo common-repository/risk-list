@@ -1,0 +1,531 @@
+.post-type-risklist_risk #wp-admin-bar-view, .post-type-risklist_risk #minor-publishing, .post-type-risklist_risk #edit-slug-box, .post-type-risklist_objective #wp-admin-bar-view, .post-type-risklist_objective #minor-publishing, .post-type-risklist_objective #edit-slug-box, .post-type-risklist_metric #wp-admin-bar-view, .post-type-risklist_metric #minor-publishing, .post-type-risklist_metric #edit-slug-box, .post-type-risklist_action #wp-admin-bar-view, .post-type-risklist_action #minor-publishing, .post-type-risklist_action #edit-slug-box, .post-type-risklist_process #wp-admin-bar-view, .post-type-risklist_process #minor-publishing, .post-type-risklist_process #edit-slug-box, .post-type-risklist_control #wp-admin-bar-view, .post-type-risklist_control #minor-publishing, .post-type-risklist_control #edit-slug-box {
+  display: none !important; }
+
+.clear {
+  clear: both; }
+
+.risk-table {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px; }
+  .risk-table .table {
+    margin-bottom: 0px !important; }
+  .risk-table .thead .th {
+    float: left;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 18px; }
+  .risk-table .clear {
+    clear: both; }
+  .risk-table .risk, .risk-table .obj-wrap {
+    border-top: 1px solid #ddd; }
+  .risk-table .risk .desc, .risk-table .control .desc {
+    font-size: 12px;
+    font-style: italic; }
+  .risk-table .risk-wrap {
+    border-left: 1px solid #ddd;
+    padding-left: 0px; }
+  .risk-table .control-wrap {
+    width: 30%;
+    border-top: 0px;
+    border-left: 1px solid #ddd;
+    padding-left: 0px; }
+  .risk-table .control-wrap, .risk-table .risk-wrap {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .risk-table .control-title {
+    border-right: 1px solid #ddd; }
+  .risk-table .risk-0, .risk-table .control-0 {
+    border-top: 0px !important; }
+
+.post-type-risklist_risk .risk-bubble {
+  position: relative;
+  height: 200px;
+  margin-top: 20px; }
+  .post-type-risklist_risk .risk-bubble .rrow {
+    clear: both; }
+  .post-type-risklist_risk .risk-bubble .l-1 {
+    verticial-align: middle;
+    line-height: 35px;
+    width: 20px !important; }
+  .post-type-risklist_risk .risk-bubble .marker {
+    position: absolute;
+    background: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    bottom: 31px;
+    left: 35px;
+    border: 1px solid; }
+  .post-type-risklist_risk .risk-bubble .ccol {
+    width: 45px;
+    height: 35px;
+    border-left: 1px solid white;
+    float: left;
+    border-bottom: 1px solid white; }
+  .post-type-risklist_risk .risk-bubble .row-5 .col-5, .post-type-risklist_risk .risk-bubble .row-5 .col-4, .post-type-risklist_risk .risk-bubble .row-5 .col-3 {
+    background: red; }
+  .post-type-risklist_risk .risk-bubble .row-5 .col-2, .post-type-risklist_risk .risk-bubble .row-5 .col-1 {
+    background: yellow; }
+  .post-type-risklist_risk .risk-bubble .row-4 .col-5, .post-type-risklist_risk .risk-bubble .row-4 .col-4 {
+    background: red; }
+  .post-type-risklist_risk .risk-bubble .row-4 .col-3, .post-type-risklist_risk .risk-bubble .row-4 .col-2, .post-type-risklist_risk .risk-bubble .row-4 .col-1 {
+    background: yellow; }
+  .post-type-risklist_risk .risk-bubble .row-3 .col-5 {
+    background: red; }
+  .post-type-risklist_risk .risk-bubble .row-3 .col-4, .post-type-risklist_risk .risk-bubble .row-3 .col-3, .post-type-risklist_risk .risk-bubble .row-3 .col-2 {
+    background: yellow; }
+  .post-type-risklist_risk .risk-bubble .row-3 .col-1 {
+    background: green; }
+  .post-type-risklist_risk .risk-bubble .row-2 .col-5, .post-type-risklist_risk .risk-bubble .row-2 .col-4, .post-type-risklist_risk .risk-bubble .row-2 .col-3 {
+    background: yellow; }
+  .post-type-risklist_risk .risk-bubble .row-2 .col-2, .post-type-risklist_risk .risk-bubble .row-2 .col-1 {
+    background: green; }
+  .post-type-risklist_risk .risk-bubble .row-1 .col-5, .post-type-risklist_risk .risk-bubble .row-1 .col-4 {
+    background: yellow; }
+  .post-type-risklist_risk .risk-bubble .row-1 .col-3, .post-type-risklist_risk .risk-bubble .row-1 .col-2, .post-type-risklist_risk .risk-bubble .row-1 .col-1 {
+    background: green; }
+  .post-type-risklist_risk .risk-bubble .row-0 .ccol {
+    text-align: center; }
+
+#dashboard-widgets-wrap .risk-bubble {
+  position: relative;
+  margin-top: 20px; }
+  #dashboard-widgets-wrap .risk-bubble .rrow {
+    clear: both; }
+  #dashboard-widgets-wrap .risk-bubble .l-1 {
+    verticial-align: middle;
+    line-height: 100px;
+    width: 85px !important;
+    font-size: 14px !important; }
+  #dashboard-widgets-wrap .risk-bubble .ccol {
+    width: 80px;
+    height: 80px;
+    border-left: 1px solid white;
+    float: left;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px; }
+    #dashboard-widgets-wrap .risk-bubble .ccol .count {
+      border-radius: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: white;
+      font-size: 15px;
+      font-weight: bold; }
+    #dashboard-widgets-wrap .risk-bubble .ccol .count-r {
+      color: #7a0000; }
+    #dashboard-widgets-wrap .risk-bubble .ccol .count-a {
+      color: #dcc91a; }
+    #dashboard-widgets-wrap .risk-bubble .ccol .count-g {
+      color: #005b00; }
+  #dashboard-widgets-wrap .risk-bubble .row-5 .col-5, #dashboard-widgets-wrap .risk-bubble .row-5 .col-4, #dashboard-widgets-wrap .risk-bubble .row-5 .col-3 {
+    background: #ca2424; }
+  #dashboard-widgets-wrap .risk-bubble .row-5 .col-2, #dashboard-widgets-wrap .risk-bubble .row-5 .col-1 {
+    background: #f3f335; }
+  #dashboard-widgets-wrap .risk-bubble .row-4 .col-5, #dashboard-widgets-wrap .risk-bubble .row-4 .col-4 {
+    background: #ca2424; }
+  #dashboard-widgets-wrap .risk-bubble .row-4 .col-3, #dashboard-widgets-wrap .risk-bubble .row-4 .col-2, #dashboard-widgets-wrap .risk-bubble .row-4 .col-1 {
+    background: #f3f335; }
+  #dashboard-widgets-wrap .risk-bubble .row-3 .col-5 {
+    background: #ca2424; }
+  #dashboard-widgets-wrap .risk-bubble .row-3 .col-4, #dashboard-widgets-wrap .risk-bubble .row-3 .col-3, #dashboard-widgets-wrap .risk-bubble .row-3 .col-2 {
+    background: #f3f335; }
+  #dashboard-widgets-wrap .risk-bubble .row-3 .col-1 {
+    background: #00a500; }
+  #dashboard-widgets-wrap .risk-bubble .row-2 .col-5, #dashboard-widgets-wrap .risk-bubble .row-2 .col-4, #dashboard-widgets-wrap .risk-bubble .row-2 .col-3 {
+    background: #f3f335; }
+  #dashboard-widgets-wrap .risk-bubble .row-2 .col-2, #dashboard-widgets-wrap .risk-bubble .row-2 .col-1 {
+    background: #00a500; }
+  #dashboard-widgets-wrap .risk-bubble .row-1 .col-5, #dashboard-widgets-wrap .risk-bubble .row-1 .col-4 {
+    background: #f3f335; }
+  #dashboard-widgets-wrap .risk-bubble .row-1 .col-3, #dashboard-widgets-wrap .risk-bubble .row-1 .col-2, #dashboard-widgets-wrap .risk-bubble .row-1 .col-1 {
+    background: #00a500; }
+  #dashboard-widgets-wrap .risk-bubble .row-0 .ccol {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px; }
+
+#risklist_riskinfo select {
+  float: right; }
+#risklist_riskinfo .residual-wrapper-select {
+  padding: 15px;
+  border: 1px solid #607D8B;
+  margin-top: 12px;
+  background: #f1f1f1; }
+#risklist_riskinfo .inherent-wrapper-select {
+  padding: 15px;
+  margin-top: 12px; }
+
+.rag .green {
+  background: #00a500;
+  color: #005b00;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 60px;
+  margin-left: 13px;
+  font-size: 17px;
+  line-height: 50px;
+  text-align: center; }
+.rag .amber {
+  background: #f3f335;
+  color: #dcc91a;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 60px;
+  margin-left: 13px;
+  font-size: 17px;
+  line-height: 50px;
+  text-align: center; }
+.rag .red {
+  background: #ca2424;
+  color: #7a0000;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 60px;
+  margin-left: 13px;
+  font-size: 17px;
+  line-height: 50px;
+  text-align: center; }
+
+#the-list .column-rag {
+  position: relative; }
+
+label {
+  font-weight: 300; }
+
+.rl-process-table {
+  width: 100%; }
+  .rl-process-table tr {
+    padding: 5px;
+    text-align: centre; }
+  .rl-process-table td {
+    text-align: center; }
+
+.who img {
+  border-radius: 50%;
+  margin-top: 5px;
+  text-align: center;
+  height: 30px;
+  width: 30px; }
+
+.status {
+  text-align: center; }
+  .status .fa {
+    font-size: 18px; }
+
+.risk-list {
+  width: 100%; }
+  .risk-list td {
+    padding: 5px; }
+  .risk-list .red .rag {
+    height: 50px;
+    width: 50px;
+    background: #ca2424; }
+  .risk-list .owner img {
+    border-radius: 50%; }
+  .risk-list .yellow .rag {
+    height: 50px;
+    width: 50px;
+    background: #f3f335; }
+  .risk-list .green .rag {
+    height: 50px;
+    width: 50px;
+    background: #00a500; }
+  .risk-list .green .fa {
+    color: #00a500; }
+  .risk-list .rag {
+    margin-bottom: 5px;
+    margin-right: 5px; }
+  .risk-list .title {
+    line-height: 12px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .risk-list .value {
+    text-align: center; }
+  .risk-list .trend {
+    text-align: center;
+    font-size: 25px; }
+  .risk-list .edit, .risk-list .updated {
+    text-align: center; }
+  .risk-list .heading .rag {
+    width: 50px;
+    margin-right: 5px;
+    font-weight: 900; }
+
+.calendar-table {
+  padding: 10px; }
+
+.metric-list {
+  width: 100%; }
+  .metric-list td {
+    padding: 5px; }
+  .metric-list th {
+    text-align: center; }
+  .metric-list .owner img {
+    border-radius: 50%; }
+  .metric-list .red .rag {
+    height: 30px;
+    width: 50px;
+    background: #ca2424; }
+  .metric-list .yellow .rag {
+    height: 30px;
+    width: 50px;
+    background: #f3f335; }
+  .metric-list .yellow .fa {
+    color: #dcc91a; }
+  .metric-list .green .rag {
+    height: 30px;
+    width: 50px;
+    background: #00a500; }
+  .metric-list .green .fa {
+    color: #00a500; }
+  .metric-list .red .rag {
+    height: 30px;
+    width: 50px;
+    background: #ca2424; }
+  .metric-list .red .fa {
+    color: #ca2424; }
+  .metric-list .rag {
+    margin-bottom: 5px;
+    margin-right: 5px; }
+  .metric-list .title {
+    line-height: 12px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .metric-list td {
+    font-size: 12px; }
+  .metric-list .value {
+    text-align: center; }
+  .metric-list .trend {
+    text-align: center;
+    font-size: 25px; }
+  .metric-list .edit, .metric-list .updated {
+    text-align: center; }
+  .metric-list .heading .rag {
+    width: 50px;
+    margin-right: 5px;
+    font-weight: 900; }
+
+.view-all-risks {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px; }
+  .view-all-risks a {
+    color: black;
+    font-weight: normal; }
+
+.owner {
+  text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  #dashboard-widgets-wrap .risk-bubble {
+    position: relative;
+    margin-top: 20px; }
+    #dashboard-widgets-wrap .risk-bubble .rrow {
+      clear: both; }
+    #dashboard-widgets-wrap .risk-bubble .l-1 {
+      verticial-align: middle;
+      line-height: 100px;
+      width: 25px !important;
+      font-size: 14px !important; }
+    #dashboard-widgets-wrap .risk-bubble .ccol {
+      width: 80px;
+      height: 80px;
+      border-left: 1px solid white;
+      float: left;
+      border-bottom: 1px solid white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 80px; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count {
+        border-radius: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-r {
+        color: #7a0000; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-a {
+        color: #dcc91a; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-g {
+        color: #005b00; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-5, #dashboard-widgets-wrap .risk-bubble .row-5 .col-4, #dashboard-widgets-wrap .risk-bubble .row-5 .col-3 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-2, #dashboard-widgets-wrap .risk-bubble .row-5 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-5, #dashboard-widgets-wrap .risk-bubble .row-4 .col-4 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-3, #dashboard-widgets-wrap .risk-bubble .row-4 .col-2, #dashboard-widgets-wrap .risk-bubble .row-4 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-5 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-4, #dashboard-widgets-wrap .risk-bubble .row-3 .col-3, #dashboard-widgets-wrap .risk-bubble .row-3 .col-2 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-5, #dashboard-widgets-wrap .risk-bubble .row-2 .col-4, #dashboard-widgets-wrap .risk-bubble .row-2 .col-3 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-2, #dashboard-widgets-wrap .risk-bubble .row-2 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-5, #dashboard-widgets-wrap .risk-bubble .row-1 .col-4 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-3, #dashboard-widgets-wrap .risk-bubble .row-1 .col-2, #dashboard-widgets-wrap .risk-bubble .row-1 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-0 .ccol {
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 10px; } }
+@media only screen and (max-width: 500px) {
+  #dashboard-widgets-wrap .risk-bubble {
+    position: relative;
+    margin-top: 20px; }
+    #dashboard-widgets-wrap .risk-bubble .rrow {
+      clear: both; }
+    #dashboard-widgets-wrap .risk-bubble .l-1 {
+      verticial-align: middle;
+      line-height: 100px;
+      width: 25px !important;
+      font-size: 11px !important; }
+    #dashboard-widgets-wrap .risk-bubble .ccol {
+      width: 55px;
+      height: 55px;
+      border-left: 1px solid white;
+      float: left;
+      border-bottom: 1px solid white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 55px; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count {
+        border-radius: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-r {
+        color: #7a0000; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-a {
+        color: #dcc91a; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-g {
+        color: #005b00; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-5, #dashboard-widgets-wrap .risk-bubble .row-5 .col-4, #dashboard-widgets-wrap .risk-bubble .row-5 .col-3 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-2, #dashboard-widgets-wrap .risk-bubble .row-5 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-5, #dashboard-widgets-wrap .risk-bubble .row-4 .col-4 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-3, #dashboard-widgets-wrap .risk-bubble .row-4 .col-2, #dashboard-widgets-wrap .risk-bubble .row-4 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-5 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-4, #dashboard-widgets-wrap .risk-bubble .row-3 .col-3, #dashboard-widgets-wrap .risk-bubble .row-3 .col-2 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-5, #dashboard-widgets-wrap .risk-bubble .row-2 .col-4, #dashboard-widgets-wrap .risk-bubble .row-2 .col-3 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-2, #dashboard-widgets-wrap .risk-bubble .row-2 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-5, #dashboard-widgets-wrap .risk-bubble .row-1 .col-4 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-3, #dashboard-widgets-wrap .risk-bubble .row-1 .col-2, #dashboard-widgets-wrap .risk-bubble .row-1 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-0 .ccol {
+      text-align: center;
+      font-size: 11px;
+      line-height: 18px;
+      margin-top: 10px; } }
+@media only screen and (max-width: 320px) {
+  #dashboard-widgets-wrap .risk-bubble {
+    position: relative;
+    margin-top: 20px; }
+    #dashboard-widgets-wrap .risk-bubble .rrow {
+      clear: both; }
+    #dashboard-widgets-wrap .risk-bubble .l-1 {
+      verticial-align: middle;
+      line-height: 100px;
+      width: 25px !important;
+      font-size: 11px !important; }
+    #dashboard-widgets-wrap .risk-bubble .ccol {
+      width: 45px;
+      height: 45px;
+      border-left: 1px solid white;
+      float: left;
+      border-bottom: 1px solid white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 45px; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count {
+        border-radius: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-r {
+        color: #7a0000; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-a {
+        color: #dcc91a; }
+      #dashboard-widgets-wrap .risk-bubble .ccol .count-g {
+        color: #005b00; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-5, #dashboard-widgets-wrap .risk-bubble .row-5 .col-4, #dashboard-widgets-wrap .risk-bubble .row-5 .col-3 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-5 .col-2, #dashboard-widgets-wrap .risk-bubble .row-5 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-5, #dashboard-widgets-wrap .risk-bubble .row-4 .col-4 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-4 .col-3, #dashboard-widgets-wrap .risk-bubble .row-4 .col-2, #dashboard-widgets-wrap .risk-bubble .row-4 .col-1 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-5 {
+      background: #ca2424; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-4, #dashboard-widgets-wrap .risk-bubble .row-3 .col-3, #dashboard-widgets-wrap .risk-bubble .row-3 .col-2 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-3 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-5, #dashboard-widgets-wrap .risk-bubble .row-2 .col-4, #dashboard-widgets-wrap .risk-bubble .row-2 .col-3 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-2 .col-2, #dashboard-widgets-wrap .risk-bubble .row-2 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-5, #dashboard-widgets-wrap .risk-bubble .row-1 .col-4 {
+      background: #f3f335; }
+    #dashboard-widgets-wrap .risk-bubble .row-1 .col-3, #dashboard-widgets-wrap .risk-bubble .row-1 .col-2, #dashboard-widgets-wrap .risk-bubble .row-1 .col-1 {
+      background: #00a500; }
+    #dashboard-widgets-wrap .risk-bubble .row-0 .ccol {
+      text-align: center;
+      font-size: 11px;
+      line-height: 18px;
+      margin-top: 10px; } }
+#process-tab td {
+  text-align: center; }
+#process-tab .btn-delete {
+  margin-top: 5px; }
+#process-tab thead th {
+  text-align: center; }
+
+#risklist_processfreq select {
+  float: right; }
+
+#metric-tab th {
+  text-align: center; }
+
+/*# sourceMappingURL=risklist.css.map */
